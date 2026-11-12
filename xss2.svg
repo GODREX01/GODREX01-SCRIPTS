@@ -1,0 +1,1 @@
+<svg xmlns="http://www.w3.org/2000/svg"> <script> alert('You are Vulnerable to XSS'); console.log('You are Vulnerable to XSS'); </script></svg>
